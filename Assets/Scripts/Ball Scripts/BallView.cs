@@ -44,7 +44,7 @@ public class BallView : MonoBehaviour
     public void LineRenderDraw(float x, float y, float z)
     {
         _line.positionCount = 2;
-        Vector3 secondVector = new Vector3(x, y, z);
+        Vector3 secondVector = new Vector3(x, y + 1f, z);
         _line.SetPosition(0, transform.position);
         _line.SetPosition(1, secondVector);
     }
